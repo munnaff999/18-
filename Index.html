@@ -1,189 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Adults Only | 18+ Content</title>
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ExoClick Site Verification -->
+    <meta name="6a97888e-site-verification" content="107b5fefddacce1f005067cf8b8bb670">
 
-<!-- SEO + Adult Safety -->
-<meta name="description" content="Adult only website. This site contains 18+ content. Visitors must be 18 years or older to enter.">
-<meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adults Only 18+</title>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#0a0a0a;
-    color:#fff;
-}
-.age-overlay{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.96);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
-}
-.age-box{
-    background:#111;
-    border:2px solid #ff0055;
-    border-radius:12px;
-    padding:30px;
-    max-width:420px;
-    text-align:center;
-}
-.age-box h1{
-    color:#ff0055;
-    margin-bottom:10px;
-}
-.age-box p{
-    font-size:14px;
-    color:#ccc;
-}
-.btn{
-    width:100%;
-    padding:14px;
-    margin-top:12px;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-}
-.btn-yes{
-    background:#ff0055;
-    color:#fff;
-}
-.btn-no{
-    background:#444;
-    color:#fff;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f0f0f;
+            color: #ffffff;
+        }
 
-header{
-    background:linear-gradient(135deg,#ff0055,#7a00ff);
-    padding:25px 15px;
-    text-align:center;
-}
-header h2{
-    margin:0;
-    font-size:28px;
-}
+        .age-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
 
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:20px;
-}
-.card{
-    background:#141414;
-    border-radius:12px;
-    padding:20px;
-    margin-bottom:20px;
-    box-shadow:0 0 18px rgba(255,0,85,0.2);
-}
-.card h3{
-    color:#ff0055;
-}
+        .age-box {
+            background: #1a1a1a;
+            padding: 30px;
+            max-width: 420px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(255,0,0,0.4);
+        }
 
-.ad-box{
-    margin:25px 0;
-    padding:15px;
-    background:#000;
-    border:1px dashed #ff0055;
-    text-align:center;
-}
+        .age-box h1 {
+            color: #ff2b2b;
+            margin-bottom: 10px;
+        }
 
-footer{
-    font-size:12px;
-    color:#777;
-    text-align:center;
-    padding:20px;
-}
-</style>
+        .age-box p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+
+        .age-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .age-buttons button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .yes-btn {
+            background: #ff2b2b;
+            color: #fff;
+        }
+
+        .no-btn {
+            background: #444;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .disclaimer {
+            background: #1a1a1a;
+            padding: 15px;
+            border-left: 4px solid #ff2b2b;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .content-box {
+            background: #141414;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+            color: #777;
+            border-top: 1px solid #222;
+        }
+    </style>
 </head>
-
 <body>
 
 <!-- AGE VERIFICATION -->
-<div class="age-overlay" id="ageBox">
+<div class="age-overlay" id="ageGate">
     <div class="age-box">
-        <h1>18+ WARNING</h1>
+        <h1>18+ Adults Only</h1>
         <p>
-            This website contains adult content intended for mature audiences.
-            By entering, you confirm that you are at least 18 years old and that
-            adult content is legal in your location.
+            This website contains adult content intended strictly for individuals
+            who are 18 years of age or older. By entering, you confirm that you are
+            legally allowed to view adult material in your country.
         </p>
-        <button class="btn btn-yes" onclick="enterSite()">I AM 18+</button>
-        <button class="btn btn-no" onclick="leaveSite()">LEAVE</button>
+        <div class="age-buttons">
+            <button class="yes-btn" onclick="enterSite()">I am 18+</button>
+            <button class="no-btn" onclick="leaveSite()">Leave</button>
+        </div>
     </div>
 </div>
 
 <header>
-    <h2>🔥 Exclusive 18+ Area 🔥</h2>
-    <p>Adult • Dating • Entertainment</p>
+    <h2>Adult Content Portal</h2>
 </header>
 
-<div class="container">
+<main>
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong> All models depicted on this website are 18 years
+        of age or older. This site contains explicit adult material and is not suitable
+        for minors.
+    </div>
 
-    <div class="card">
-        <h3>Adult Content Disclaimer</h3>
+    <!-- 🔥 EXOCLICK AD ZONE (PASTE CODE HERE LATER) -->
+    <div class="content-box">
+        <h3>Sponsored Content</h3>
+        <p>Advertisement loading…</p>
+        <!-- ExoClick Ad Code yahan paste hoga -->
+    </div>
+
+    <div class="content-box">
+        <h3>Premium Adult Content</h3>
         <p>
-            This website is strictly for adults. All visitors must be
-            18 years or older. We do not host illegal content and all
-            users access this site voluntarily.
+            Explore exclusive adult entertainment. All content is user-requested
+            and voluntarily accessed. Viewer discretion is advised.
         </p>
     </div>
-
-    <!-- EXOCLICK AD ZONE 1 -->
-    <div class="ad-box">
-        <!-- EXOCLICK_AD_CODE_HERE -->
-    </div>
-
-    <div class="card">
-        <h3>What You Will Find</h3>
-        <p>
-            ✔ Adult entertainment<br>
-            ✔ Dating & chat platforms<br>
-            ✔ Mobile-friendly experience<br>
-            ✔ Worldwide adult traffic
-        </p>
-    </div>
-
-    <!-- EXOCLICK AD ZONE 2 -->
-    <div class="ad-box">
-        <!-- EXOCLICK_AD_CODE_HERE -->
-    </div>
-
-    <div class="card">
-        <h3>User Responsibility</h3>
-        <p>
-            By using this website, you agree that you are responsible
-            for complying with local laws. If adult content is not
-            permitted in your country, please leave immediately.
-        </p>
-    </div>
-
-    <!-- EXOCLICK AD ZONE 3 -->
-    <div class="ad-box">
-        <!-- EXOCLICK_AD_CODE_HERE -->
-    </div>
-
-</div>
+</main>
 
 <footer>
-    © 2026 Adult Website | All Rights Reserved  
-    <br>
-    This site does not collect personal data.
+    © 2026 Adults Only | 18+ | All Rights Reserved
 </footer>
 
 <script>
-function enterSite(){
-    document.getElementById("ageBox").style.display="none";
-}
-function leaveSite(){
-    window.location.href="https://www.google.com";
-}
+    function enterSite() {
+        document.getElementById('ageGate').style.display = 'none';
+        localStorage.setItem('ageVerified', 'true');
+    }
+
+    function leaveSite() {
+        window.location.href = 'https://www.google.com';
+    }
+
+    if (localStorage.getItem('ageVerified') === 'true') {
+        document.getElementById('ageGate').style.display = 'none';
+    }
 </script>
 
 </body>

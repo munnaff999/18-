@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Adults Only | 18+ Content</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO + Adult Safety -->
+<meta name="description" content="Adult only website. This site contains 18+ content. Visitors must be 18 years or older to enter.">
+<meta name="robots" content="index, follow">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0a0a0a;
+    color:#fff;
+}
+.age-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.96);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+.age-box{
+    background:#111;
+    border:2px solid #ff0055;
+    border-radius:12px;
+    padding:30px;
+    max-width:420px;
+    text-align:center;
+}
+.age-box h1{
+    color:#ff0055;
+    margin-bottom:10px;
+}
+.age-box p{
+    font-size:14px;
+    color:#ccc;
+}
+.btn{
+    width:100%;
+    padding:14px;
+    margin-top:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+.btn-yes{
+    background:#ff0055;
+    color:#fff;
+}
+.btn-no{
+    background:#444;
+    color:#fff;
+}
+
+header{
+    background:linear-gradient(135deg,#ff0055,#7a00ff);
+    padding:25px 15px;
+    text-align:center;
+}
+header h2{
+    margin:0;
+    font-size:28px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+.card{
+    background:#141414;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 0 18px rgba(255,0,85,0.2);
+}
+.card h3{
+    color:#ff0055;
+}
+
+.ad-box{
+    margin:25px 0;
+    padding:15px;
+    background:#000;
+    border:1px dashed #ff0055;
+    text-align:center;
+}
+
+footer{
+    font-size:12px;
+    color:#777;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- AGE VERIFICATION -->
+<div class="age-overlay" id="ageBox">
+    <div class="age-box">
+        <h1>18+ WARNING</h1>
+        <p>
+            This website contains adult content intended for mature audiences.
+            By entering, you confirm that you are at least 18 years old and that
+            adult content is legal in your location.
+        </p>
+        <button class="btn btn-yes" onclick="enterSite()">I AM 18+</button>
+        <button class="btn btn-no" onclick="leaveSite()">LEAVE</button>
+    </div>
+</div>
+
+<header>
+    <h2>🔥 Exclusive 18+ Area 🔥</h2>
+    <p>Adult • Dating • Entertainment</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Adult Content Disclaimer</h3>
+        <p>
+            This website is strictly for adults. All visitors must be
+            18 years or older. We do not host illegal content and all
+            users access this site voluntarily.
+        </p>
+    </div>
+
+    <!-- EXOCLICK AD ZONE 1 -->
+    <div class="ad-box">
+        <!-- EXOCLICK_AD_CODE_HERE -->
+    </div>
+
+    <div class="card">
+        <h3>What You Will Find</h3>
+        <p>
+            ✔ Adult entertainment<br>
+            ✔ Dating & chat platforms<br>
+            ✔ Mobile-friendly experience<br>
+            ✔ Worldwide adult traffic
+        </p>
+    </div>
+
+    <!-- EXOCLICK AD ZONE 2 -->
+    <div class="ad-box">
+        <!-- EXOCLICK_AD_CODE_HERE -->
+    </div>
+
+    <div class="card">
+        <h3>User Responsibility</h3>
+        <p>
+            By using this website, you agree that you are responsible
+            for complying with local laws. If adult content is not
+            permitted in your country, please leave immediately.
+        </p>
+    </div>
+
+    <!-- EXOCLICK AD ZONE 3 -->
+    <div class="ad-box">
+        <!-- EXOCLICK_AD_CODE_HERE -->
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Adult Website | All Rights Reserved  
+    <br>
+    This site does not collect personal data.
+</footer>
+
+<script>
+function enterSite(){
+    document.getElementById("ageBox").style.display="none";
+}
+function leaveSite(){
+    window.location.href="https://www.google.com";
+}
+</script>
+
+</body>
+</html>
